@@ -1,0 +1,213 @@
+{
+	"siteVersion": "1.161.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "BrknlvsCompendiumofStuff",
+				"abbreviation": "BCS",
+				"full": "Brknlv's Compendium of Stuff",
+				"url": "",
+				"authors": [
+					"brknlv"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1657965101,
+		"dateLastModified": 1657965101
+	},
+	"monster": [
+		{
+			"name": "Chef Cru-Do",
+			"shortName": true,
+			"source": "BrknlvsCompendiumofStuff",
+			"level": 10,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "warlock",
+						"prefix": "Noble Genie"
+					}
+				]
+			},
+			"alignment": [
+				{
+					"alignment": [
+						"L",
+						"E"
+					]
+				},
+				{
+					"alignment": [
+						"C",
+						"G"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 28",
+				"average": 76
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 30,
+					"condition": "(hover) lasts 10 minutes when Genie's Gift is activated"
+				},
+				"canHover": true
+			},
+			"str": 23,
+			"dex": 18,
+			"con": 14,
+			"int": 8,
+			"wis": 10,
+			"cha": 18,
+			"save": {
+				"wis": "+4",
+				"cha": "+8"
+			},
+			"skill": {
+				"intimidation": "+8",
+				"investigation": "+3",
+				"survival": "+4",
+				"nature": "+3"
+			},
+			"senses": [
+				"Darkvision 60 ft"
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"thunder"
+					],
+					"note": "(from genie's gift)"
+				}
+			],
+			"languages": [
+				"Common",
+				"Undercommon"
+			],
+			"spellcasting": [
+				{
+					"name": "Pact Magic",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell friends}",
+								"{@spell lightning lure|TCE}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell spare the dying}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell hex}"
+							],
+							"slots": 0,
+							"lower": 1
+						},
+						"2": {
+							"spells": [
+								"{@spell suggestion}",
+								"{@spell wither and bloom|SCC}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"{@spell creation}",
+								"{@spell dream}",
+								"{@spell greater restoration}",
+								"{@spell scrying}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"rest": {
+						"1": [
+							"{@spell bestow curse} (uses a spell slot)"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Inventory",
+					"entries": [
+						"un botto di robe"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Miracle Weapon",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d6 + 11}) slashing damage, plus {@damage 4} thunder damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Maddening Hex",
+					"entries": [
+						"{@damage 4} psychic damage to a cursed creature and any creature of your choice within 5 ft"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Other Proficiencies:",
+					"- Light Armor",
+					"- Simple Weapons",
+					"- Herbalism Kit"
+				]
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"U"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"L",
+				"N",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
